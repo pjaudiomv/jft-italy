@@ -1,6 +1,6 @@
 === JFT Italy ===
 
-Contributors: pjaudiomv
+Contributors: bmltenabled
 Tags: jft, just for today, italy, narcotics anonymous, na
 Tested up to: 5.4.0
 Stable tag: 1.0.0

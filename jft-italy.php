@@ -2,7 +2,7 @@
 /*
 Plugin Name: JFT Italy
 Plugin URI: https://wordpress.org/plugins/fetch-jft/
-Author: Patrick J NERNA
+Author: BMLT Community
 Description: This is a plugin that fetches the Just For Today from NAWS and puts it on your site Simply add [jft] shortcode to your page. Fetch JFT Widget can be added to your sidebar or footer as well.
 Version: 1.0.0
 Install: Drop this directory into the "wp-content/plugins/" directory and activate it.
@@ -83,9 +83,9 @@ class jft_italy_Widget extends WP_Widget {
             echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
         }
         $get_jft = jft_italy_widget_func( $atts );
-        echo '<a href="' . $get_jft['url'] . '">' . $get_jft['title'] . '</a><br/><br/>';
+        echo $get_jft['title'] . '<br/><br/>';
         echo $get_jft['excerpt'];
-        echo '&nbsp;&nbsp;<a href="' . $get_jft['url'] . '">Leggi di più →</a><br/><br/>';
+        echo '&nbsp;&nbsp;<a href="https://naitaliadev.com/solo-per-oggi/">Leggi di più →</a><br/><br/>';
         echo $args['after_widget'];
     }
     /**
